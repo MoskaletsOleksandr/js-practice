@@ -1,3 +1,5 @@
+// import products from './products.js';
+
 // const value = 27.9;
 
 // const ceil = Math.ceil(value);
@@ -2841,23 +2843,246 @@ const cars = [
 
 // console.log(myArray);
 
-function multiplyAll(arr) {
-  let product = 1;
-  // Only change code below this line
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i].length);
-    for (let j = 0; j < arr[i].length; j++) {
-      product *= arr[i][j];
-    }
-  }
-  // Only change code above this line
-  return product;
-}
+// function multiplyAll(arr) {
+//   let product = 1;
+//   // Only change code below this line
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i].length);
+//     for (let j = 0; j < arr[i].length; j++) {
+//       product *= arr[i][j];
+//     }
+//   }
+//   // Only change code above this line
+//   return product;
+// }
 
-console.log(
-  multiplyAll([
-    [1, 2],
-    [3, 4],
-    [5, 6, 7],
-  ])
-);
+// console.log(
+//   multiplyAll([
+//     [1, 2],
+//     [3, 4],
+//     [5, 6, 7],
+//   ])
+// );
+
+// console.log(document);
+
+// const navEl = document.querySelector('.site-nav');
+
+// console.log(navEl);
+
+// const navLinksEl = document.querySelectorAll('.site-nav__link');
+// console.log(navLinksEl);
+
+// const magicBtn = document.querySelector('.js-magic-btn');
+
+// magicBtn.addEventListener('click', () => {
+//   const navEl = document.querySelector('.site-nav');
+
+//   console.log(navEl);
+
+//   const navLinksEl = document.querySelectorAll('.site-nav__link');
+//   console.log(navLinksEl);
+// });
+
+// const magicBtn = document.querySelector('.js-magic-btn');
+
+// magicBtn.addEventListener('click', () => {
+//   const imageEl = document.querySelector('.hero__image');
+//   console.log(imageEl);
+//   console.log(imageEl.src);
+//   imageEl.src =
+//     'https://images.pexels.com/photos/1870376/pexels-photo-1870376.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=480';
+//   imageEl.alt = 'Это новый котик';
+// });
+
+// const heroTitleEl = document.querySelector('.hero__title');
+// console.log(heroTitleEl);
+// console.log(heroTitleEl.textContent);
+
+// const imageEl = document.querySelector('.hero__image');
+
+// console.log(imageEl.src);
+// console.log(imageEl.getAttribute('src'));
+// console.log(imageEl.hasAttribute('src'));
+// imageEl.remove('src');
+
+// const magicBtn = document.querySelector('.js-magic-btn');
+
+// magicBtn.addEventListener('click', () => {
+// const nevEl = document.querySelector('.site-nav');
+//   console.log(nevEl.classList);
+
+//   nevEl.classList.add('super');
+//   nevEl.classList.remove('site-nav');
+// });
+
+// const magicBtn = document.querySelector('.js-magic-btn');
+
+// const nevEl = document.querySelector('.site-nav');
+
+// const titleEl = document.createElement('h1');
+// titleEl.classList.add('qwe');
+// titleEl.textContent = 'fdsmkv fervfvdv';
+// console.log(titleEl);
+
+// document.body.appendChild(titleEl);
+// const navItemEl = document.createElement('li');
+// navItemEl.classList.add('site-nav__item');
+
+// const navLinkEl = document.createElement('a');
+// navLinkEl.classList.add('site-nav__link');
+// navLinkEl.textContent = 'fghjl dfghjk';
+// navLinkEl.href = '/gbuhjf';
+
+// navItemEl.appendChild(navLinkEl);
+
+// console.log(navItemEl);
+
+// const navEl = document.querySelector('.site-nav');
+// console.log(navEl);
+
+// navEl.insertBefore(navItemEl, navEl.firstElementChild);
+
+const colorPickerOptions = [
+  { label: 'red', color: '#F44336' },
+  { label: 'green', color: '#4CAF50' },
+  { label: 'blue', color: '#2196F3' },
+  { label: 'grey', color: '#607D8B' },
+  { label: 'pink', color: '#E91E63' },
+  { label: 'indigo', color: '#3F51B5' },
+];
+
+const colorPickerContainerEl = document.querySelector('.js-color-picker');
+
+// const elements = colorPickerOptions.map((option) => {
+//   const btnEl = document.createElement('button');
+//   btnEl.type = 'button';
+//   btnEl.classList.add('color-picker__option');
+//   btnEl.textContent = option.label;
+//   btnEl.style.backgroundColor = option.color;
+
+//   return btnEl;
+// });
+
+// console.log(elements);
+
+// const makeColorPickerOptions = (options) => {
+//   return options.map((option) => {
+//     const btnEl = document.createElement('button');
+//     btnEl.type = 'button';
+//     btnEl.classList.add('color-picker__option');
+//     btnEl.textContent = option.label;
+//     btnEl.style.backgroundColor = option.color;
+
+//     return btnEl;
+//   });
+// };
+
+// const elements = makeColorPickerOptions(colorPickerOptions);
+
+// colorPickerContainerEl.append(...elements);
+
+// const product = {
+//   name: 'Сервоприводы',
+//   description:
+//     'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa eius deleniti dolor facilis consectetur laborum aperiam exercitationem quam hic natus.',
+//   price: 2000,
+//   available: true,
+//   onSale: true,
+// };
+
+// console.log(products);
+// const productEl = document.createElement('article');
+// productEl.classList.add('product');
+
+// const nameEl = document.createElement('h1');
+// nameEl.classList.add('product__name');
+// nameEl.textContent = product.name;
+
+// const descrEl = document.createElement('p');
+// descrEl.classList.add('product__description');
+// descrEl.textContent = product.description;
+
+// const priceEl = document.createElement('p');
+// priceEl.classList.add('product__price');
+// priceEl.textContent = `Price: ${product.price}`;
+
+// productEl.append(nameEl, descrEl, priceEl);
+
+// console.log(productEl);
+
+// const productsConainerEl = document.querySelector('.js-products');
+
+// const makeProductCard = ({ name, description, price }) => {
+//   const productEl = document.createElement('article');
+//   productEl.classList.add('product');
+
+//   const nameEl = document.createElement('h1');
+//   nameEl.classList.add('product__name');
+//   nameEl.textContent = name;
+
+//   const descrEl = document.createElement('p');
+//   descrEl.classList.add('product__description');
+//   descrEl.textContent = description;
+
+//   const priceEl = document.createElement('p');
+//   priceEl.classList.add('product__price');
+//   priceEl.textContent = `Price: ${price}`;
+
+//   productEl.append(nameEl, descrEl, priceEl);
+
+//   return productEl;
+// };
+
+// console.log(makeProductCard(products[0]));
+
+// const elements = products.map(makeProductCard);
+
+// console.log(elements);
+
+// console.log(productsConainerEl);
+
+// productsConainerEl.append(...elements);
+
+// const paragraphEl = document.querySelector('.description');
+
+// console.log(paragraphEl.nextElementSibling.children[1]);
+
+// console.log(paragraphEl);
+
+// const imgEl = document.querySelector('.some-img');
+// console.log(imgEl);
+
+// imgEl.setAttribute('src', 'https://picsum.photos/id/239/200/300');
+
+// console.log(imgEl.getAttribute('alt'));
+
+// // imgEl.removeAttribute('src');
+
+// imgEl.src = 'https://picsum.photos/id/237/200/300';
+
+// const titleEl = document.querySelector('#title');
+
+// console.log(titleEl);
+
+// titleEl.style.color = 'green';
+// titleEl.style.backgroundColor = 'blue';
+// titleEl.style.fontSize = '80px';
+
+// titleEl.style.cssText =
+//   'color: black; font-size: 40px; background-color: tomato';
+
+const imgEl = document.querySelector('.js-img');
+
+// imgEl.addEventListener('click');
+
+const swapBtnEl = document.querySelector('.js-swap-btn');
+
+const removeListenerBtnEl = document.querySelector('.js-remove-listener');
+
+const handleSwapImg = () => {
+  console.log(imgEl.src);
+  imgEl.src = 'https://picsum.photo/200/200';
+};
+
+swapBtnEl.addEventListener('click', handleSwapImg);
