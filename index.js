@@ -3072,17 +3072,23 @@ const colorPickerContainerEl = document.querySelector('.js-color-picker');
 // titleEl.style.cssText =
 //   'color: black; font-size: 40px; background-color: tomato';
 
-const imgEl = document.querySelector('.js-img');
+// const imgEl = document.querySelector('.js-img');
 
-// imgEl.addEventListener('click');
+// // imgEl.addEventListener('click');
 
-const swapBtnEl = document.querySelector('.js-swap-btn');
+// const swapBtnEl = document.querySelector('.js-swap-btn');
 
-const removeListenerBtnEl = document.querySelector('.js-remove-listener');
+// const removeListenerBtnEl = document.querySelector('.js-remove-listener');
 
-const handleSwapImg = () => {
-  console.log(imgEl.src);
-  imgEl.src = 'https://picsum.photo/200/200';
-};
+// const handleSwapImg = () => {
+//   console.log(imgEl.src);
+//   imgEl.src = 'https://picsum.photo/200/200';
+// };
 
-swapBtnEl.addEventListener('click', handleSwapImg);
+// swapBtnEl.addEventListener('click', handleSwapImg);
+
+const inputs = document.getElementById('my-form').elements;
+const inputByIndex = inputs[0];
+const inputByName = inputs['username'];
+
+console.log(inputByName);
