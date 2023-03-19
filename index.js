@@ -3087,8 +3087,309 @@ const colorPickerContainerEl = document.querySelector('.js-color-picker');
 
 // swapBtnEl.addEventListener('click', handleSwapImg);
 
-const inputs = document.getElementById('my-form').elements;
-const inputByIndex = inputs[0];
-const inputByName = inputs['username'];
+// const inputs = document.getElementById('my-form').elements;
+// const inputByIndex = inputs[0];
+// const inputByName = inputs['username'];
 
-console.log(inputByName);
+// console.log(inputByName);
+
+// function sum(arr, n) {
+//   if (n <= 0) {
+//     return 0;
+//   } else {
+//     return sum(arr, n - 1) + arr[n - 1];
+//   }
+// }
+
+// console.log(sum([2, 3, 4, 5], 3));
+
+// // Setup
+// const contacts = [
+//   {
+//     firstName: 'Akira',
+//     lastName: 'Laine',
+//     number: '0543236543',
+//     likes: ['Pizza', 'Coding', 'Brownie Points'],
+//   },
+//   {
+//     firstName: 'Harry',
+//     lastName: 'Potter',
+//     number: '0994372684',
+//     likes: ['Hogwarts', 'Magic', 'Hagrid'],
+//   },
+//   {
+//     firstName: 'Sherlock',
+//     lastName: 'Holmes',
+//     number: '0487345643',
+//     likes: ['Intriguing Cases', 'Violin'],
+//   },
+//   {
+//     firstName: 'Kristian',
+//     lastName: 'Vos',
+//     number: 'unknown',
+//     likes: ['JavaScript', 'Gaming', 'Foxes'],
+//   },
+// ];
+
+// function lookUpProfile(name, prop) {
+//   // Only change code below this line
+//   for (const contact of contacts) {
+//     if (contact.firstName === name) {
+//       if (contact[prop]) {
+//         return contact[prop];
+//       }
+//       return 'No such property';
+//     }
+//   }
+//   return 'No such contact';
+//   // Only change code above this line
+// }
+
+// console.log(lookUpProfile('Akira', 'likes'));
+
+// console.log(lookUpProfile('Kristian', 'lastName'));
+// // console.log(lookUpProfile('Sherlock', 'likes'));
+// // console.log(lookUpProfile('Harry', 'likes'));
+// // console.log(lookUpProfile('Bob', 'number'));
+// // console.log(lookUpProfile('Bob', 'potato'));
+// console.log(lookUpProfile('Akira', 'address'));
+
+// // No such property
+
+// Only change code below this line
+// function countdown(n) {
+//   if (n <= 0) {
+//     return [];
+//   } else {
+//     const countArray = countdown(n - 1);
+//     countArray.unshift(n);
+//     return countArray;
+//   }
+// }
+// // Only change code above this line
+
+// console.log(countdown(10));
+// console.log(countdown(5));
+// console.log(countdown(-1));
+
+// function rangeOfNumbers(startNum, endNum) {
+//   let result = [];
+//   if (startNum === endNum) {
+//     return result.push(startNum);
+//   }
+//   result = rangeOfNumbers(startNum + 1, endNum);
+//   result.push(startNum);
+
+//   return result;
+// }
+
+// console.log(rangeOfNumbers(1, 5));
+// console.log(rangeOfNumbers(6, 9));
+// console.log(rangeOfNumbers(4, 4));
+
+// const s = [5, 7, 2];
+// function editInPlace() {
+//   // Only change code below this line
+//   s[0];
+//   // Using s = [2, 5, 7] would be invalid
+
+//   // Only change code above this line
+// }
+// console.log(editInPlace());
+
+// const LOCAL_FORECAST = {
+//   yesterday: { low: 61, high: 75 },
+//   today: { low: 64, high: 77 },
+//   tomorrow: { low: 68, high: 80 },
+// };
+
+// // Only change code below this line
+
+// const {
+//   today: { low: lowToday, high: highToday },
+//   tomorrow: { low: lowTomorrow, high: highTomorow },
+// } = LOCAL_FORECAST;
+
+// // Only change code above this line
+
+// console.log(highToday);
+
+// console.log('First');
+
+// const greet = () => {
+//   console.log('Hello, user!');
+// };
+
+// setTimeout(() => {
+//   console.log('Hi from 3000');
+// }, 3000);
+
+// setInterval(() => {
+//   console.log('Tick');
+// }, 1000);
+
+// console.log('Second');
+// greet();
+
+// let s = 1;
+
+// const id = setInterval(() => {
+//   console.log(s);
+
+//   s += 1;
+// }, 1000);
+
+// document.addEventListener('click', () => {
+//   clearInterval(id);
+// });
+
+// const date = new Date(2021, 1, 20, 3, 12);
+
+// // date.setFullYear(2021);
+// // date.setMonth(5);
+// // date.setDate(25);
+// console.log(date);
+
+// console.log(date.getDate());
+// console.log(date.getMonth());
+
+// const weekDays = ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+
+// // console.log(weekDays);
+
+// const getWeekDay = (date) => {
+//   const weekDayIndex = date.getDay();
+
+//   console.log(weekDays[weekDayIndex]);
+// };
+
+// const date = new Date();
+
+// getWeekDay(date);
+
+// const getLastDayOfMonth = (year, momth) => {
+//   const date = new Date(year, momth + 1);
+
+//   return date;
+// };
+
+// const promise = new Promise((resolve, reject) => {
+//   const canFulfill = Math.random() > 0.5;
+
+//   setTimeout(() => {
+//     if (canFulfill) {
+//       resolve('resolve');
+//     }
+
+//     reject('reject');
+//   }, 1000);
+// });
+
+// console.log(promise);
+
+// promise.then(
+//   (result) => {
+//     console.log(`OK!!! ${result}`);
+//   },
+//   (error) => {
+//     console.log(`NO!!! ${error}`);
+//   }
+// );
+
+// const horses = [
+//   'Secretariat',
+//   'Eclipse',
+//   'West Australian',
+//   'Flying Fox',
+//   'Seabiscuit',
+// ];
+
+// let counter = 1;
+
+// const refs = {
+//   StartBtn: document.querySelector('.js-start-race'),
+//   winnerField: document.querySelector('.js-winner'),
+//   progressField: document.querySelector('.js-progress'),
+//   tableBody: document.querySelector('.js-results-table > tbody'),
+// };
+
+// refs.StartBtn.addEventListener('click', () => {
+//   const promises = horses.map(run);
+
+//   refs.winnerField.textContent = '';
+//   refs.progressField.textContent = 'Race started. No bet!';
+
+//   Promise.race(promises).then(({ horse, time }) => {
+//     refs.winnerField.textContent = `Horse ${horse} won! Its time is ${time}`;
+
+//     updateResultsTable({ horse, time });
+//   });
+
+//   Promise.all(promises).then(() => {
+//     refs.progressField.textContent = 'Race is done! Wait your bet.';
+//   });
+// });
+
+// function updateResultsTable({ horse, time }) {
+//   const tr = `<tr><td>${counter}</td><td>${horse}</td><td>${time}</td></tr>`;
+//   refs.tableBody.insertAdjacentHTML('beforeend', tr);
+
+//   counter += 1;
+// }
+
+// console.log(horses);
+
+// function run(horse) {
+//   return new Promise((resolve) => {
+//     const time = getRandomTime(2000, 3500);
+
+//     setTimeout(() => {
+//       resolve({ horse, time });
+//     }, time);
+//   });
+// }
+
+// // run('Mango')
+// //   .then((x) => console.log(x))
+// //   .catch((e) => console.log(e));
+
+// function getRandomTime(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1) + min);
+// }
+
+// const promises = horses.map(run);
+
+// console.log(promises);
+
+// // Promise.race(promises).then(({ horse, time }) =>
+// //   console.log(`Horse ${horse} won! Its time is ${time}`)
+// // );
+
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (0.5 > Math.random()) {
+      console.log('resolve');
+      resolve('Done!');
+    } else {
+      console.log('reject');
+      reject('error');
+    }
+  }, 200);
+});
+
+// console.log(promise);
+
+promise
+  .then((data) => {
+    console.log(data);
+    return data + '!!';
+  })
+  .then((data1) => {
+    console.log(data1);
+  })
+  .catch((error) => {
+    console.log(error);
+  })
+  .finally(() => {
+    console.log('Finish!');
+  });
